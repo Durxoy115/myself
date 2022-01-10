@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500;700&family=Shizuru&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #121212;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner{
+    display: flex;
+    height: 100vh;
+
+}
+.banner-right img{
+    width: 400px;
+    height: 400px;
+}
+.banner-left{
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.banner-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.banner-title::before{
+    content: 'Naimor Rahaman Durjoy';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #22bedd;
+    animation: typing 5s linear infinite;
+}
+.banner-text{
+    line-height: 2;
+    margin: 20px 0;
+}
+
+.love-button{
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #22bedd ;
+    color: #fff;
+    border: 4px solid #22bedd;
+    cursor: pointer;
+    transition: 3s linear;
+}
+
+.love-button:hover{
+    background-color: transparent;
+    color: #22bedd;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo{
+    height: 280px;
+    width: 280px;
+    position: relative;
+    overflow: hidden;
+}
+.border{
+    background-color: white;
+    position: absolute;
+    transition: 0.7s ease-in-out;
+}
+.border.top, .border.bottom{
+    height: 4px;
+    width: 270px;
+}
+.border.left, .border.right{
+    height: 270px;
+    width: 4px;
+}
+.border.top{
+    top: 5px;
+    right: 100%;
+}
+.border.bottom{
+    bottom: 5px;
+    left: 100%;
+}
+.border.left{
+    left: 5px;
+    top:100%;
+}
+.border.right{
+    right: 5px;
+    bottom: 100%;
+}
+.photo:hover .border.top{
+    right: 5px;
+}
+.photo:hover .border.bottom{
+    left: 5px;
+}
+.photo:hover .border.left{
+    top: 5px;
+}
+.photo:hover .border.right{
+    bottom: 5px;
+}
+.photo-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding-left: 30px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(400px);
+}
+.photo:hover .photo-content{
+    transform: translateY(200px);
+    transition: .3s ease-out;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+.section-title h1{
+       color: #22bedd;
+       font-size: 40px;
+       margin: 50px 0;
+       border-left: 3px solid #22bedd;
+       border-right: 3px solid #22bedd ;
+       display: inline-block;
+       padding: 0 10px;
+       line-height: .8;
+}
+.section-title{
+    text-align: center;
+}
+.banner img{
+    border: #22bedd;
+}
+.new{
+    margin-top: 20px;
+}
+@keyframes typing {
+    0%{
+        content: 'N|';
+     }
+     3%{
+         content: 'Na';
+     }
+     6%{
+         content: 'Nai';
+     }
+     9%{
+         content: 'Naim';
+     }
+     12%{
+         content: 'Naimo';
+     }
+     15%{
+         content: 'Naimor';
+     }
+     18%{
+         content: 'Naimor R';
+     }
+     21%{
+         content: 'Naimor Ra';
+     }
+     24%{
+         content: 'Naimor Rah';
+     }
+     27%{
+         content: 'Naimor Raha';
+     }
+     30%{
+         content: 'Naimor Raham';
+     }
+     33%{
+         content: 'Naimor Rahama';
+     }
+     36%{
+         content: 'Naimor Rahaman';
+     }
+     39%{
+         content: 'Naimor Rahaman D';
+     }
+     42%{
+         content: 'Naimor Rahaman Du';
+     }
+     45%{
+         content: 'Naimor Rahaman Dur';
+     }
+     48%{
+         content: 'Naimor Rahaman Durj';
+     }
+     51%{
+         content: 'Naimor Rahaman Durjo';
+     }
+     54%{
+         content: 'Naimor Rahaman Durjoy|';
+     }
+     58%,
+     80%{
+         content: 'Naimor Rahaman Durjoy|';
+     }
+
+     81%{
+         content:'Naimor Rahaman Durjo';
+     }
+     82%{
+         content:'Naimor Rahaman Durj';
+     }
+     83%{
+         content:'Naimor Rahaman Dur';
+     }
+     84%{
+         content:'Naimor Rahaman Du';
+     }
+     85%{
+         content:'Naimor Rahaman D';
+     }
+     86%{
+         content:'Naimor Rahaman ';
+     }
+     87%{
+         content:'Naimor Rahama';
+     }
+     88%{
+         content:'Naimor Raham';
+     }
+     89%{
+         content:'Naimor Raha';
+     }
+     90%{
+         content:'Naimor Rah';
+     }
+     91%{
+         content:'Naimor Ra';
+     }
+     92%{
+         content:'Naimor R';
+     }
+     93%{
+         content:'Naimor ';
+     }
+     94%{
+         content:'Naimo';
+     }
+     95%{
+         content:'Naim';
+     }
+     96%{
+         content:'Nai';
+     }
+     97%{
+         content:'Na';
+     }
+     98%{
+         content:'N';
+     }
+     99%{
+         content:'|';
+     }
+     100%{
+         content:'|';
+     }
+     
+}
